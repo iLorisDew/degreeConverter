@@ -41,15 +41,22 @@ public class tempConvers
 				break;
 		
 			case 2:
-				System.out.println("From C to F");
-				break;	
-			
+				System.out.println("From F to C");
+				System.out.println("Give the variable you want to convert");
+				float tempF = scan.nextFloat();
+				
+				tempF = (((tempF-32)*5)/9);
+				
+				System.out.println(tempF);
+				
+				break;
+
 			}
 			rep = ' ';
 		
 			do 
 			{
-				System.out.println("Voulez-vous réessayer ? (O/N)");
+				System.out.println("Voulez-vous reessayer ? (O/N)");
 				scan.nextLine();
 				String reponse = scan.nextLine();
 				
